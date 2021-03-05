@@ -1,0 +1,179 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    overflow-y: hidden;
+
+
+  }
+  .body{
+    background-image: linear-gradient(to bottom,#ff2626,#0b1f2c);
+    padding-top: 12%;
+    padding-bottom: 15%;
+
+
+
+       }
+  .container{
+    background-color: white;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 2%;
+
+    border-radius: 5px;
+
+
+
+  }
+      .red{
+        color: red;
+        font-family: serif;
+        font-weight: bold;
+      }
+      .login{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-family: monospace;
+        font-weight:bold;
+        font-size: 40px
+
+      }
+      .user{
+        margin-bottom: 5%;
+        margin-top: 50px;
+        border: none;
+        outline: none;
+      }
+      .pass{
+        border: none;
+        outline: none;
+
+      }
+      .btn{
+        margin-top: 5%;
+        background-image: linear-gradient(to right,#ff2626,#0b1f2c);;
+        outline: none;
+        border: none;
+        border-radius: 15px;
+        padding: 10px;
+        margin-right: 40px;
+        margin-top: 50px;
+        margin-bottom: 60px;
+        color: white;
+        font-family: sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        padding-left: 7%;
+        padding-right: 7%;
+
+      }
+      .btn:hover{
+        cursor: pointer;
+      }
+      a{
+        text-decoration: none;
+
+        border-radius: 15px;
+        padding: 5px;
+        color: #2C3E50 ;
+        font-family: sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+      }
+      a:checked{
+        color: black;
+      }
+      .red-b{
+        position: absolute;
+        color: red;
+        font-family: monospace;
+        font-weight: bold;
+        bottom: 25%;
+        z-index: 80;
+        left: 35%;
+        font-size: 14px
+      }
+
+      .red-s{
+        position: absolute;
+        color: red;
+        font-family: monospace;
+        font-weight: bold;
+        bottom: 25%;
+        z-index: 80;
+        left: 40%;
+        font-size: 14px
+      }
+      .loader{
+        z-index: 1000;
+        background-color: white;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        bottom: 0%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+
+      }
+
+
+
+
+    @media screen and (max-width:900px) {
+      .body{
+        padding-bottom: 100%;
+        padding-top: 5%;
+        padding-right: 5%;
+      }
+      .container{
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 30%;
+
+      }
+      a{
+        font-size: 16px;
+      }
+      .pass{
+        font-size: 15px;
+      }
+      .user{
+        font-size: 15px;
+      }
+
+
+    }
+
+
+    @media screen and (width:768px) {
+      .body{
+        padding-bottom: 100%;
+        padding-top: 5%;
+        padding-right: 5%;
+      }
+      .container{
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 15%;
+
+      }
+      a{
+        font-size: 16px;
+      }
+      .pass{
+        font-size: 15px;
+      }
+      .user{
+        font-size: 15px;
+      }
+
+
+    }
+
+
+
+
