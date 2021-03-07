@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
- <link rel="stylesheet" href="authv2.css">
+ <link rel="stylesheet" href="auth.css?<?php echo time()?>">
 </head>
 <body>
 <div class="body">
@@ -24,11 +24,46 @@
 
 
               </form>
-             <a href="../index.php" class="home">Home</a>
+             
     </div>
 
   </div>
+  <style>
+     .red-b{
+        position: absolute;
+        color: red;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
+        font-weight: bold;
+        bottom: 22%;
+        z-index: 80;
+        left: 36%;
+        font-size: 14px
+      }
+
+      .red-s{
+        position: absolute;
+        color: red;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        font-weight: bold;
+        bottom: 22%;
+        z-index: 80;
+        left: 42%;
+        font-size: 14px
+      }
+      .red-v{
+        position: absolute;
+        color: red;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        
+        font-weight: bold;
+        bottom: 22%;
+        z-index: 80;
+        left: 42%;
+        font-size: 14px
+      }
+   </style>
   
   <?php
   if(isset($_GET["error"])){

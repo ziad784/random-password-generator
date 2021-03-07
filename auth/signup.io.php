@@ -1,8 +1,8 @@
 <?php
-
+ session_start();
 if(isset($_POST["submit"])){
 
-   $conn = mysqli_connect("localhost", "root", "","login");
+   $conn =     $conn = mysqli_connect("host name","user","password","database name");
 
    if(!$conn){
      echo "problem";

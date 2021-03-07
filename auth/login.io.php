@@ -1,11 +1,12 @@
 <?php
+
 session_start();
 
 
 
 if(isset($_POST["submit"])){
 
-    $conn = mysqli_connect("localhost", "root", "","login");
+    $conn = mysqli_connect("host name","user","password","database name");
 
     if(!$conn){
       echo "problem";
@@ -40,7 +41,7 @@ if(isset($_POST["submit"])){
         $row = mysqli_fetch_assoc($res);
 
         if($user == $row["username"] && $pass == $row["password"]){
-          session_start();
+      
          $_SESSION["login"] = true;
          $_SESSION["user"] = $_POST["user"];
          $_SESSION["id"] = $row["id"];
@@ -55,9 +56,10 @@ if(isset($_POST["submit"])){
       
       
         header("Location: ./login.php?error=wrong");
+        
     }
   }
 }
 }else{
-    echo "I know";
+    header("Location:login.php");
 }
